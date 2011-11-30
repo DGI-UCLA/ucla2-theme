@@ -1,0 +1,296 @@
+/* body */
+
+body
+{
+  background-color: #536895;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13px;
+}
+
+a:link,
+a:visited
+{
+  color: #aaa;
+}
+
+a:hover,
+a.active,
+li a.active
+{
+  color: #ccc;
+}
+
+h2
+{
+  color: #1A202E;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+
+/* top-border */
+
+.top-border-wrapper
+{
+  background-color: #000;
+  height: 25px;
+}
+
+.top-border-wrapper .top-border
+{
+  width: 960px;
+  margin: 0px auto;
+}
+
+#logo
+{
+  float: left;
+  width: 283px;
+  height: 23px;
+  margin: 1px 0px 0px 0px;
+  background: url('../images/ucla/ucla-logo.png') center top no-repeat transparent;
+
+  text-indent: -999em;
+  overflow: hidden;
+
+}
+
+/* header */
+
+#header
+{
+  background: url('../images/ucla/powell.png') right bottom no-repeat transparent;
+}
+
+/* Search block */
+
+#block-islandora_solr_search-simple
+{
+  float: right;
+  width: 500px;
+  height: 60px;
+}
+
+#edit-islandora-simple-search-query-wrapper
+{
+  float: left;
+  width: 390px;
+  height: 30px;
+
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+form#islandora-solr-search-block-form input#edit-fedora-terms1
+form#islandora-solr-search-block-form input#edit-fedora-terms2,
+form#islandora-solr-search-block-form input#edit-fedora-terms3,
+form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query
+{
+  float: left;
+  width: 386px;
+  height: 24px;
+  display: block;
+
+  border: 1px solid #AAAAAA;
+
+  font-size: 17px;
+  padding: 2px 1px;
+}
+
+#block-islandora_solr_search-simple .form-submit
+{
+  float: left;
+  width: 110px;
+  height: 30px;
+  display: block;
+  margin-left: 0;
+
+  font-family: Arial,Helvetica,sans-serif;
+  border: 1px solid #AAAAAA;
+  background-color: #FFB300;
+  cursor: pointer;
+
+  color: #1A202E;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#block-islandora_solr_search-simple .form-submit:hover
+{
+  background-color: #FFDE5A;
+}
+
+
+/* Secondary menu items */
+
+.region-header .block-menu
+{
+  float: left;
+  width: 200px;
+}
+
+.region-header .block-menu ul.menu
+{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+}
+
+.region-header .block-menu ul.menu li
+{
+  float: left;
+  display: block;
+  margin: 0px 1px;
+}
+
+.region-header .block-menu ul.menu li a
+{
+  float: left;
+  padding: 0 8px;
+  display: block;
+
+  background: -moz-linear-gradient(center top , #EEEEEE, #B8C0D3) repeat scroll 0 0 transparent;
+
+  color: #000000;
+  font-size: 13px;
+  font-weight: bold;
+
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.region-header .block-menu ul.menu li a:hover
+{
+  color: #aaa;
+}
+
+
+
+
+.quick-jump
+{
+  float: right;
+  width: 520px;
+  height: 162px;
+}
+
+
+
+
+
+/* navigation */
+
+#navigation
+{
+  width:100%;
+  height: 38px;
+
+  background-color:#B8C0D3;
+  background: -moz-linear-gradient(top, #eeeeee, #B8C0D3);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #eeeeee),color-stop(1, #B8C0D3));
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#B8C0D3');
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#B8C0D3');
+  line-height:34px;
+}
+
+#navigation h2
+{
+  float: left;
+  width: 190px;
+  padding-left: 23px;
+  margin: 0px 0px 0px 0px;
+  vertical-align: middle;
+  line-height: 37px;
+
+}
+
+#navigation a,
+#navigation a:link,
+#navigation a:visited
+{
+  float: left;
+  height: 36px;
+  padding: 0px 17px;
+
+  font-weight: bold;
+  color: #1A202E;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#navigation a:hover,
+#navigation a.active
+{
+  color: #35425F;
+  text-decoration: none;
+}
+
+#navigation a.active
+{
+  background: url('../images/ucla/active-arrow.png') center bottom no-repeat transparent;
+}
+
+ul#main-menu
+{
+  float: right;
+}
+
+#navigation li
+{
+  margin: 0px 0px 0px 0px;
+  padding: 2px 0px 0px 0px;
+}
+
+
+/* sidebar */
+
+#main .block
+{
+  padding: 5px 5px 5px 5px;
+}
+
+#main .block h2
+{
+  color: #fff;
+}
+
+/* main */
+
+#main
+{
+  padding: 0px 0px 25px 0px;
+}
+
+#main-wrapper
+{
+  background-color: #35425F;
+  color: #fff;
+}
+
+.with-navigation #content,
+.with-navigation .region-sidebar-first,
+.with-navigation .region-sidebar-second
+{
+  margin-top: 38px;
+}
+
+#content .section
+{
+  padding: 10px 10px 10px 10px;
+}
+
+
+/* Admin section */
+
+.logged-in .draggable
+{
+  color: #555;
+}
