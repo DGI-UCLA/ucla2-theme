@@ -6,7 +6,7 @@ This is the second UCLA drupal theme. It's a zen sub-theme for D6.
 Initial install (use sudo if needed)
 ====================================
 - go to your /themes folder
-- git clone git@github.com:discoverygarden/ucla2-theme.git
+- git clone git@github.com:discoverygarden/ucla2-theme.git (or use the https:// link)
 - mv ucla2-theme ucla2
 
 Structure
