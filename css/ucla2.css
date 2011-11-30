@@ -27,7 +27,11 @@ h2
   font-weight: bold;
 }
 
-
+tr.even,
+tr.odd
+{
+  background-color: #4F5E7A;
+}
 
 /* top-border */
 
