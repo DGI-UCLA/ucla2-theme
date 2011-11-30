@@ -27,10 +27,20 @@ h2
   font-weight: bold;
 }
 
+table
+{
+  width: 100%;
+}
+
 tr.even,
 tr.odd
 {
   background-color: #4F5E7A;
+}
+
+td
+{
+  padding: 5px 5px 5px 5px;
 }
 
 /* top-border */
