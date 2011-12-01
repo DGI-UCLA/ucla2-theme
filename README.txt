@@ -20,4 +20,4 @@ Extra:
 Included in the theme is an export file for the aggregator view. This is located at /other/views-aggregator-export.txt .
 - Enable aggregator and pull the following feed: http://blogs.library.ucla.edu/digitallibraryprogram/feed/ (run cron)
 - install and enable views and views slideshow (+singleframe)
-- import the view
+- import the view (!important: view name should be "digitallibraryprogram")
