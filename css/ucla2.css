@@ -141,7 +141,7 @@ form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query
 .region-header .block-menu
 {
   float: left;
-  width: 200px;
+  width: 440px;
 }
 
 .region-header .block-menu ul.menu
@@ -167,7 +167,13 @@ form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query
   padding: 0 8px;
   display: block;
 
-  background: -moz-linear-gradient(center top , #EEEEEE, #B8C0D3) repeat scroll 0 0 transparent;
+  background-color: #eeeeee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#B8C0D3));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #B8C0D3);
+  background-image:    -moz-linear-gradient(top, #eeeeee, #B8C0D3);
+  background-image:     -ms-linear-gradient(top, #eeeeee, #B8C0D3);
+  background-image:      -o-linear-gradient(top, #eeeeee, #B8C0D3);
+  background-image:         linear-gradient(top, #eeeeee, #B8C0D3);
 
   color: #000000;
   font-size: 13px;
@@ -186,6 +192,33 @@ form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query
 
 
 
+.blog-feed
+{
+  float: left;
+  width: 168px;
+  height: 128px;
+  margin: 61px 0px 0px 0px;
+}
+
+.blog-feed-title
+{
+  float: left;
+  width: 100px;
+  height: 25px;
+  background: url('../images/ucla/text_images.png') left -75px no-repeat transparent;
+
+}
+
+.from-our-blog
+{
+  float: left;
+  width: 168px;
+  height: 93px;
+  margin: 5px 0px 0px 0px;
+  background: url('../images/ucla/from-our-blog.png') center top no-repeat transparent;
+}
+
+
 .quick-jump
 {
   float: right;
@@ -193,6 +226,135 @@ form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query
   height: 162px;
 }
 
+.view-digitallibraryprogram
+{
+  float: left;
+  width: 260px; /* 270px */
+  margin: 91px 0px 0px 0px;
+  padding: 0px 0px 0px 10px;
+}
+
+#views_slideshow_singleframe_playpause_digitallibraryprogram-block_1
+{
+  display: none;
+}
+
+.view-digitallibraryprogram .views_slideshow_singleframe_slide
+{
+  float: left;
+  width: 270px;
+}
+
+.view-digitallibraryprogram .view-content
+{
+  height: 93px;
+  position: relative;
+}
+
+#views_slideshow_singleframe_prev_digitallibraryprogram-block_1
+{
+  float: left;
+  width: 25px;
+  height: 26px;
+  margin: 0px 5px 0px 0px;
+
+  background: url('../images/ucla/control-buttons.png') 0px -28px no-repeat transparent;
+
+  text-indent: -999em;
+  overflow: hidden;
+}
+
+#views_slideshow_singleframe_prev_digitallibraryprogram-block_1:hover
+{
+  background-position: 0px 0px;
+}
+
+#views_slideshow_singleframe_next_digitallibraryprogram-block_1
+{
+  float: left;
+  width: 25px;
+  height: 26px;
+  background: url('../images/ucla/control-buttons.png') -28px -28px no-repeat transparent;
+
+  text-indent: -999em;
+  overflow: hidden;
+}
+
+#views_slideshow_singleframe_next_digitallibraryprogram-block_1:hover
+{
+  background-position: -28px 0px;
+}
+
+.views-slideshow-controls-bottom
+{
+  float: left;
+  /*margin: 10px 0px 0px 0px;*/
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.view-digitallibraryprogram .field-content
+{
+  float: left;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+
+  line-height: 13px;
+
+  color: #C4CFEF;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.view-digitallibraryprogram .views-field-title a,
+.view-digitallibraryprogram .views-field-title a:link,
+.view-digitallibraryprogram .views-field-title a:visited
+{
+  float: left;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+
+  color: #C4CFEF;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.view-digitallibraryprogram .views-field-title a:hover
+{
+  color: #fff;
+  text-decoration: underline;
+}
+
+.view-digitallibraryprogram .views-field-author
+{
+  float: left;
+  width: 100%;
+}
+
+.view-digitallibraryprogram .views-field-author label
+{
+  float: left;
+  width: auto;
+  margin: 0px 5px 0px 0px;
+  color: #C4CFEF;
+}
+
+.view-digitallibraryprogram .views-field-author span
+{
+  float: left;
+  width: auto;
+  color: #C4CFEF;
+}
+
+.view-digitallibraryprogram .views-row div
+{
+  float: left;
+  width: 100%;
+  margin: 0px 0px 3px 0px;
+}
 
 
 

@@ -130,6 +130,11 @@
 
       <?php print $header; ?>
 
+      <div class="blog-feed">
+        <div class="blog-feed-title"></div>
+        <div class="from-our-blog"></div>
+      </div>
+      <?php print $blog_feeds_block; ?>
       <div class="quick-jump"></div>
 
     </div></div><!-- /.section, /#header -->

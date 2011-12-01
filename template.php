@@ -100,6 +100,10 @@ function ucla2_preprocess_page(&$vars, $hook) {
 
   $vars['ucla_logo'] = l(t('Home'), '<front>', array('attributes' => array('title' => t('Home'), 'rel' => 'home', 'id' => 'logo') ) );
 
+  // render views slideshow block
+  $vars['blog_feeds_block'] = views_embed_view('digitallibraryprogram', 'block_1');
+  //Reload the javascript into the scripts.
+  $vars['scripts'] = drupal_get_js();
 
 
 //  dsm($ucla);

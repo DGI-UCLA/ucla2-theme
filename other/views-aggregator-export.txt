@@ -1,0 +1,178 @@
+$view = new view;
+$view->name = 'digitallibraryprogram';
+$view->description = 'UCLA blog aggregator';
+$view->tag = 'custom, aggregator';
+$view->base_table = 'aggregator_item';
+$view->core = 6;
+$view->api_version = '2';
+$view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+$handler = $view->new_display('default', 'Defaults', 'default');
+$handler->override_option('fields', array(
+  'timestamp' => array(
+    'label' => '',
+    'alter' => array(
+      'alter_text' => 0,
+      'text' => '',
+      'make_link' => 0,
+      'path' => '',
+      'absolute' => 0,
+      'link_class' => '',
+      'alt' => '',
+      'rel' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'target' => '',
+      'help' => '',
+      'trim' => 0,
+      'max_length' => '',
+      'word_boundary' => 1,
+      'ellipsis' => 1,
+      'html' => 0,
+      'strip_tags' => 0,
+    ),
+    'empty' => '',
+    'hide_empty' => 0,
+    'empty_zero' => 0,
+    'hide_alter_empty' => 1,
+    'date_format' => 'custom',
+    'custom_date_format' => 'F j, Y',
+    'exclude' => 0,
+    'id' => 'timestamp',
+    'table' => 'aggregator_item',
+    'field' => 'timestamp',
+    'override' => array(
+      'button' => 'Override',
+    ),
+    'relationship' => 'none',
+  ),
+  'title' => array(
+    'label' => '',
+    'alter' => array(
+      'alter_text' => 0,
+      'text' => '',
+      'make_link' => 0,
+      'path' => '',
+      'absolute' => 0,
+      'link_class' => '',
+      'alt' => '',
+      'rel' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'target' => '',
+      'help' => '',
+      'trim' => 0,
+      'max_length' => '',
+      'word_boundary' => 1,
+      'ellipsis' => 1,
+      'html' => 0,
+      'strip_tags' => 0,
+    ),
+    'empty' => '',
+    'hide_empty' => 0,
+    'empty_zero' => 0,
+    'hide_alter_empty' => 1,
+    'display_as_link' => 1,
+    'exclude' => 0,
+    'id' => 'title',
+    'table' => 'aggregator_item',
+    'field' => 'title',
+    'override' => array(
+      'button' => 'Override',
+    ),
+    'relationship' => 'none',
+  ),
+  'author' => array(
+    'label' => 'Author',
+    'alter' => array(
+      'alter_text' => 0,
+      'text' => '',
+      'make_link' => 0,
+      'path' => '',
+      'absolute' => 0,
+      'link_class' => '',
+      'alt' => '',
+      'rel' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'target' => '',
+      'help' => '',
+      'trim' => 0,
+      'max_length' => '',
+      'word_boundary' => 1,
+      'ellipsis' => 1,
+      'html' => 0,
+      'strip_tags' => 0,
+    ),
+    'empty' => '',
+    'hide_empty' => 0,
+    'empty_zero' => 0,
+    'hide_alter_empty' => 1,
+    'exclude' => 0,
+    'id' => 'author',
+    'table' => 'aggregator_item',
+    'field' => 'author',
+    'override' => array(
+      'button' => 'Override',
+    ),
+    'relationship' => 'none',
+  ),
+));
+$handler->override_option('sorts', array(
+  'timestamp' => array(
+    'order' => 'DESC',
+    'granularity' => 'second',
+    'id' => 'timestamp',
+    'table' => 'aggregator_item',
+    'field' => 'timestamp',
+    'override' => array(
+      'button' => 'Override',
+    ),
+    'relationship' => 'none',
+  ),
+));
+$handler->override_option('access', array(
+  'type' => 'none',
+));
+$handler->override_option('cache', array(
+  'type' => 'none',
+));
+$handler->override_option('title', 'News');
+$handler->override_option('style_plugin', 'slideshow');
+$handler->override_option('style_options', array(
+  'type' => 'ul',
+  'mode' => 'views_slideshow_singleframe',
+  'views_slideshow_singleframe-prefix' => '',
+  'views_slideshow_singleframe' => array(
+    'timeout' => '5000',
+    'delay' => '0',
+    'speed' => '700',
+    'start_paused' => 0,
+    'fixed_height' => '1',
+    'random' => '0',
+    'pause' => '1',
+    'pause_on_click' => '0',
+    'pause_when_hidden' => 0,
+    'pause_when_hidden_type' => 'full',
+    'amount_allowed_visible' => '',
+    'remember_slide' => 0,
+    'remember_slide_days' => '1',
+    'controls' => '2',
+    'pager' => '0',
+    'pager_type' => 'Numbered',
+    'pager_hover' => '2',
+    'pager_click_to_page' => 0,
+    'image_count' => '0',
+    'items_per_slide' => '1',
+    'effect' => 'scrollHorz',
+    'sync' => '1',
+    'nowrap' => '0',
+    'advanced' => '',
+    'ie' => array(
+      'cleartype' => 'true',
+      'cleartypenobg' => 'false',
+    ),
+  ),
+));
+$handler = $view->new_display('block', 'Block: ucla blog aggregator', 'block_1');
+$handler->override_option('block_description', '');
+$handler->override_option('block_caching', -1);

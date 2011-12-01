@@ -1,7 +1,12 @@
-/**
- * Created by JetBrains PhpStorm.
- * User: dannyjoris
- * Date: 11-11-29
- * Time: 4:06 PM
- * To change this template use File | Settings | File Templates.
- */
+$(document).ready(function() {
+
+  // open external links in new window
+  $("a[href^=http]").each(function () {
+    if (this.href.indexOf(location.hostname) == -1) {
+      $(this).click(function () {
+        window.open(this.href);
+        return false;
+      });
+    }
+  });
+});

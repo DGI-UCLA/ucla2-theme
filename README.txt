@@ -14,3 +14,10 @@ Structure
 - the main navigation bar is populated by primary menu items.
 - the links and solr search fields are located in the header area. You can use any menu block, but the solr block
 has to be the islandora simple search block.
+
+Extra:
+======
+Included in the theme is an export file for the aggregator view. This is located at /other/views-aggregator-export.txt .
+- Enable aggregator and pull the following feed: http://blogs.library.ucla.edu/digitallibraryprogram/feed/ (run cron)
+- install and enable views and views slideshow (+singleframe)
+- import the view
