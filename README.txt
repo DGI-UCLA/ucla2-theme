@@ -21,3 +21,12 @@ Included in the theme is an export file for the aggregator view. This is located
 - Enable aggregator and pull the following feed: http://blogs.library.ucla.edu/digitallibraryprogram/feed/ (run cron)
 - install and enable views and views slideshow (+singleframe)
 - import the view (!important: view name should be "digitallibraryprogram")
+
+Superfish support:
+- install and enable the superfish module -> instructions: http://drupal.org/node/1125896 (important -> step 1:
+downloading the superfish library)
+- superfish block settings:
+-- move to header region
+-- choose a menu root (secondary links in our case)
+-- style: none
+-- optional but less important: animation speed: 0, mouse delay: 500

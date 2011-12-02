@@ -143,13 +143,15 @@ form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query
 
 /* Secondary menu items */
 
-.region-header .block-menu
+.region-header .block-menu,
+.region-header .block-superfish
 {
   float: left;
   width: 440px;
 }
 
-.region-header .block-menu ul.menu
+.region-header .block-menu ul.menu,
+.region-header .block-superfish ul
 {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
@@ -159,14 +161,16 @@ form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query
   list-style-type: none;
 }
 
-.region-header .block-menu ul.menu li
+.region-header .block-menu ul.menu li,
+.region-header .block-superfish ul li
 {
   float: left;
   display: block;
   margin: 0px 1px;
 }
 
-.region-header .block-menu ul.menu li a
+.region-header .block-menu ul.menu li a,
+.region-header .block-superfish ul li a
 {
   float: left;
   padding: 0 8px;
@@ -185,13 +189,27 @@ form#islandora-solr-simple-search-form input#edit-islandora-simple-search-query
   font-weight: bold;
 
   line-height: 28px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
 }
 
-.region-header .block-menu ul.menu li a:hover
+.region-header .block-menu ul.menu li a:hover,
+.region-header .block-superfish ul li a:hover
 {
   color: #aaa;
+}
+
+.region-header .block-superfish ul ul a
+{
+  background-image: none;
+}
+
+.region-header .block-superfish ul ul a:hover
+{
+  background-image: none;
+  background-color: #B8C0D3;
+  color: #eee;
+
 }
 
 
