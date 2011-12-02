@@ -107,7 +107,7 @@ function ucla2_preprocess_page(&$vars, $hook) {
     $vars['scripts'] = drupal_get_js();
   }
 
-  dsm($vars);
+//  dsm($vars);
   // To remove a class from $classes_array, use array_diff().
   //$vars['classes_array'] = array_diff($vars['classes_array'], array('class-to-remove'));
 }
