@@ -100,13 +100,14 @@ function ucla2_preprocess_page(&$vars, $hook) {
 
   $vars['ucla_logo'] = l(t('Home'), '<front>', array('attributes' => array('title' => t('Home'), 'rel' => 'home', 'id' => 'logo') ) );
 
-  // render views slideshow block
-  $vars['blog_feeds_block'] = views_embed_view('digitallibraryprogram', 'block_1');
-  //Reload the javascript into the scripts.
-  $vars['scripts'] = drupal_get_js();
+  if ($vars['is_front']) {
+    // render views slideshow block
+    $vars['blog_feeds_block'] = views_embed_view('digitallibraryprogram', 'block_1');
+    //Reload the javascript into the scripts.
+    $vars['scripts'] = drupal_get_js();
+  }
 
-
-//  dsm($ucla);
+  dsm($vars);
   // To remove a class from $classes_array, use array_diff().
   //$vars['classes_array'] = array_diff($vars['classes_array'], array('class-to-remove'));
 }

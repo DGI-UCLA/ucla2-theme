@@ -77,6 +77,11 @@ td
   background: url('../images/ucla/powell.png') right bottom no-repeat transparent;
 }
 
+.not-front #header
+{
+  background-image: none;
+}
+
 /* Search block */
 
 #block-islandora_solr_search-simple
