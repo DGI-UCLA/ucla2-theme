@@ -10,14 +10,18 @@ body
 a:link,
 a:visited
 {
-  color: #aaa;
+  /*color: #aaa;*/
+  /*color: #B3C1DF*/
+  /*color: #C4CFEF;*/
+  color: #ADBAD5;
 }
 
 a:hover,
 a.active,
 li a.active
 {
-  color: #ccc;
+  /*color: #ccc;*/
+  color: #C4CFEF;
 }
 
 h2
@@ -451,6 +455,7 @@ ul#main-menu
 #main .block
 {
   padding: 5px 5px 5px 5px;
+  float: left;
 }
 
 #main .block h2
@@ -490,3 +495,141 @@ ul#main-menu
 {
   /*color: #555;*/
 }
+
+
+/* Solr results */
+
+.islandora_solr_result
+{
+  float: left;
+  /*width: 100%;*/
+
+  border-bottom: 1px solid #ADBAD5;
+  /*margin: 0px 0px 20px 0px;*/
+  /*padding: 0px 0px 20px 0px;*/
+
+  width: 700px;
+  margin: 0px 0px 0px 0px;
+  padding: 20px 10px;
+}
+
+.islandora_solr_result.odd
+{
+  background-color: #3D4E6E;
+
+}
+
+.islandora_solr_result.even
+{
+  background-color: #475777;
+}
+
+.solr-left
+{
+  float: left;
+  width: 520px;
+}
+
+.solr-right
+{
+  float: right;
+  width: 180px;
+}
+
+.solr-right img
+{
+  float: right;
+  width: 150px;
+  height: 150px;
+}
+
+.solr-field
+{
+  float: left;
+  width: 100%;
+  padding: 2px 0;
+}
+
+.solr-field .label
+{
+  float: left;
+  width: 90px;
+}
+
+.solr-field .label label
+{
+  font-weight: bold;
+  color: #ADBAD5;
+}
+
+.solr-field .value
+{
+  float: left;
+  width: 430px;
+}
+
+
+
+#content-area h2
+{
+  color: #fff;
+}
+
+.item-list .pager
+{
+  float: left;
+  width: 100%;
+}
+
+
+
+/* Facet overview */
+
+.islandora_solr_search_facet_wrap ul li
+{
+  font-size: 100%;
+}
+
+.region-sidebar-first .section {
+  margin: 0px 0px 0px 0px;
+  padding: 0 5px;
+}
+
+.region-sidebar-first .block ul,
+.region-sidebar-first .item-list ul
+{
+  float: left;
+  width: 150px;
+  background-color: #3D4E6E;
+  padding: 15px;
+  margin: 0px 0px 10px 0px;
+}
+
+.region-sidebar-first h3
+{
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+a.shown-toggle
+{
+  float: right;
+  width: 100%;
+  text-align: right;
+  margin: 0px 0px 10px 0px;
+}
+
+.region-sidebar-first .islandora_solr_search_facet ul a,
+.region-sidebar-first .islandora_solr_search_facet .item-list ul a
+{
+  text-decoration: none;
+}
+
+
+/* content viewer */
+
+.section-fedora #tabs-tabset #tabset-tab-2 img
+{
+
+}
+
