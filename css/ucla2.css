@@ -628,8 +628,9 @@ a.shown-toggle
 
 /* content viewer */
 
-.section-fedora #tabs-tabset #tabset-tab-2 img
-{
-
+.section-fedora #tabs-tabset #tabset-tab-2 img {
+  background: none repeat scroll 0 0 #3D4E6E;
+  padding: 40px 120px 40px 115px;
+  width: 705px;
 }
 
