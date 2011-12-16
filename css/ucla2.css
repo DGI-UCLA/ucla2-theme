@@ -639,6 +639,8 @@ a.shown-toggle
 
 
 
+/* Sidebar second Front */
+
 .front .region-sidebar-second {
   margin-left: 735px;
   width: 225px;
@@ -654,3 +656,9 @@ a.shown-toggle
 {
   margin: 10px 5px;
 }
+
+.front .region-sidebar-second .block h2.title
+{
+  margin: 10px 0px;
+}
+
