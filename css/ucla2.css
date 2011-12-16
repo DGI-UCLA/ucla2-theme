@@ -634,3 +634,20 @@ a.shown-toggle
   width: 705px;
 }
 
+
+
+.front .region-sidebar-second {
+  margin-left: 735px;
+  width: 225px;
+}
+
+.front .sidebar-second #content
+{
+  margin-right: -735px;
+  width: 735px;
+}
+
+.front .region-sidebar-second .section
+{
+  margin: 10px 5px;
+}
