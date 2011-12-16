@@ -641,7 +641,7 @@ a.shown-toggle
   width: 225px;
 }
 
-.front .sidebar-second #content
+.front.sidebar-second #content
 {
   margin-right: -735px;
   width: 735px;
