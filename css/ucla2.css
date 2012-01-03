@@ -603,6 +603,7 @@ ul#main-menu
   background-color: #3D4E6E;
   padding: 15px;
   margin: 0px 0px 10px 0px;
+  overflow: hidden;
 }
 
 .region-sidebar-first h3
