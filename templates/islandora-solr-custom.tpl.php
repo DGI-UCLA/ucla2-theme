@@ -64,17 +64,10 @@
         </div>
         <?php endif; ?>
 
-        <?php if($result['mods_dateIssued_dt']['value']): ?>
-        <div class="solr-field <?php print $result['mods_dateIssued_dt']['class']; ?>">
-          <div class="label"><label><?php print t($result['mods_dateIssued_dt']['label']); ?></label></div>
-          <div class="value"><?php print date('l, F j Y', strtotime($result['mods_dateIssued_dt']['value'])); ?></div>
-        </div>
-        <?php endif; ?>
-
-        <?php if($result['mods_subjectName_s']['value']): ?>
-        <div class="solr-field <?php print $result['mods_subjectName_s']['class']; ?>">
-          <div class="label"><label><?php print t($result['mods_subjectName_s']['label']); ?></label></div>
-          <div class="value"><?php print $result['mods_subjectName_s']['value']; ?></div>
+        <?php if($result['mods_publisher_s']['value']): ?>
+        <div class="solr-field <?php print $result['mods_publisher_s']['class']; ?>">
+          <div class="label"><label><?php print t($result['mods_publisher_s']['label']); ?></label></div>
+          <div class="value"><?php print $result['mods_publisher_s']['value']; ?></div>
         </div>
         <?php endif; ?>
 
@@ -82,6 +75,20 @@
         <div class="solr-field <?php print $result['mods_genre_s']['class']; ?>">
           <div class="label"><label><?php print t($result['mods_genre_s']['label']); ?></label></div>
           <div class="value"><?php print $result['mods_genre_s']['value']; ?></div>
+        </div>
+        <?php endif; ?>
+        
+        <?php if($result['mods_subjectName_s']['value']): ?>
+        <div class="solr-field <?php print $result['mods_subjectName_s']['class']; ?>">
+          <div class="label"><label><?php print t($result['mods_subjectName_s']['label']); ?></label></div>
+          <div class="value"><?php print $result['mods_subjectName_s']['value']; ?></div>
+        </div>
+        <?php endif; ?>
+        
+        <?php if($result['mods_dateIssued_dt']['value']): ?>
+        <div class="solr-field <?php print $result['mods_dateIssued_dt']['class']; ?>">
+          <div class="label"><label><?php print t($result['mods_dateIssued_dt']['label']); ?></label></div>
+          <div class="value"><?php print date('l, F j Y', strtotime($result['mods_dateIssued_dt']['value'])); ?></div>
         </div>
         <?php endif; ?>
 
