@@ -693,12 +693,14 @@ a.shown-toggle
   margin: 0px 0px 0px 0px;
   list-style: none;
   list-style-image: none;
+/*  border-right: solid red 5px;*/
+  /* background-color: red; */ /* #475777 */
 }
 
 #gmap-overlay ul li
 {
   float: left;
-  width: 630px; /* 675px */ /* 660px */
+  min-width: 630px; /* 675px */ /* 660px */
   min-height: 559px; /* 590px */ /* 589px */
   padding: 15px 15px 15px 15px;
   margin: 0px 0px 0px 0px;
@@ -721,7 +723,7 @@ a.shown-toggle
 #islandora-solr-gmap-items img
 {
   width: 100%;
-  height: 100%;
+/*  height: 100%;*/
 }
 
 #islandora-solr-gmap-items .img-wrap
@@ -731,6 +733,9 @@ a.shown-toggle
   min-height: 530px;
   text-align: center;
   vertical-align: middle;
+  
+  /* spinner credit: http://preloaders.net/en/circular */
+  background: url('../images/ucla/spinner-blue.png') center 250px no-repeat transparent;
   
 }
 

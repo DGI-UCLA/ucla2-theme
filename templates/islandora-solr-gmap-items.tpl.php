@@ -12,13 +12,19 @@
  */
 ?>
 <?php if($marker_items): ?>
-<ul id="islandora-solr-gmap-items">
+<ul id="islandora-solr-gmap-items" onload="loadPictures()">
   <?php $zebra = 'odd'; ?>
+  <?php $i = 0; ?>
   <?php foreach($marker_items as $item): ?>
      <li class="islandora-solr-gmap-item <?php print $zebra; ?>">
      <?php $zebra = ($zebra == 'odd'? 'even' : 'odd' ); ?>
      <div class="img-wrap">
-       <img src="http://164.67.30.146/drupal/fedora/repository/<?php print $item['PID']; ?>/JPG/JPG" />
+       <?php if($i == 0): ?>
+         <img src="http://164.67.30.146/drupal/fedora/repository/<?php print $item['PID']; ?>/JPG/JPG" />
+       <?php $i++ ?>
+       <?php else: ?>
+         <img path="http://164.67.30.146/drupal/fedora/repository/<?php print $item['PID']; ?>/JPG/JPG" />
+       <?php endif; ?>
      </div>
        
      <div class="solr-field-title">
