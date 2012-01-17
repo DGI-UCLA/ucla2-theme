@@ -663,3 +663,79 @@ a.shown-toggle
   margin: 10px 0px;
 }
 
+
+
+/* Islandora Solr Gmap */
+
+#gmap-overlay-wrap
+{
+  background: #35425F;
+  background: rgba(53, 66, 95, 1);
+}
+
+#gmap-overlay
+{
+  width: 675px;
+  position: absolute;
+  bottom: 20px;
+  right: 7px;
+  top: 40px;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  cursor: pointer;
+}
+
+#gmap-overlay ul
+{
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  list-style: none;
+  list-style-image: none;
+}
+
+#gmap-overlay ul li
+{
+  float: left;
+  width: 630px; /* 675px */ /* 660px */
+  min-height: 559px; /* 590px */ /* 589px */
+  padding: 15px 15px 15px 15px;
+  margin: 0px 0px 0px 0px;
+
+  list-style: none;
+  list-style-image: none;
+  border-bottom: 1px solid #ADBAD5;
+}
+
+#islandora-solr-gmap-items .odd
+{
+  background-color: #475777;
+}
+
+#islandora-solr-gmap-items .even
+{
+  background-color: #3D4E6E;
+}
+
+#islandora-solr-gmap-items img
+{
+  width: 100%;
+  height: 100%;
+}
+
+#islandora-solr-gmap-items .img-wrap
+{
+  float: left;
+  width: 100%;
+  min-height: 530px;
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+#islandora-solr-gmap-items .solr-field-title
+{
+  float: left;
+  margin: 10px 0px 0px 0px;
+}
