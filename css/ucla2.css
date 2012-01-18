@@ -735,7 +735,8 @@ a.shown-toggle
   vertical-align: middle;
   
   /* spinner credit: http://preloaders.net/en/circular */
-  background: url('../images/ucla/spinner-blue.png') center 250px no-repeat transparent;
+/*  background: url('../images/ucla/spinner-blue.png') center 250px no-repeat transparent;*/
+  background: url('../images/ucla/spinner-475777.gif') center 250px no-repeat transparent;
   
 }
 
@@ -743,4 +744,24 @@ a.shown-toggle
 {
   float: left;
   margin: 10px 0px 0px 0px;
+}
+
+#gmap-overlay-wrap a.hovering,
+#gmap-overlay-wrap a#gmap-overlay-close:hover
+{
+  text-shadow: 0px 0px 6px #fff; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  color: #C6D1E7; /* #ADBAD5 */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#gmap-overlay-wrap a#gmap-overlay-close:hover
+{
+  color: #E3EAF7;
+}
+#gmap-overlay-wrap a.hovering.hovering-reset
+{
+  text-shadow: 0px 0px 0px #fff;
+  color: #ADBAD5;
+  font-weight: normal;
 }

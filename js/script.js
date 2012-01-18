@@ -1,8 +1,7 @@
 (function($) {
 
+  // open external links in new window
   Drupal.behaviors.externalLink = function(context) {   
-
-    // open external links in new window
     $("a[href^=http]").each(function () {
       if (this.href.indexOf(location.hostname) == -1) {
         $(this).click(function () {
@@ -13,8 +12,8 @@
     });
   }
 
+  // Trigger image load on scroll
   Drupal.behaviors.loadPictures = function(context) {   
-
     $('#gmap-overlay').scroll(function() {
       var imgs = $(this).find('img');
       var bottom_edge = this.scrollTop + this.offsetHeight;
@@ -28,8 +27,47 @@
         }
       }
     });
-
-
   }
-             
+
+  // when ajax returns the popup content trigger a function to make sure
+  // the links behave correctly
+  Drupal.behaviors.openLinkInPopup = function(context) {   
+    $('#islandora-solr-gmap-wrap').ajaxSuccess(function() {
+      $('#gmap-overlay a').click(function() {
+        window.location = this.href;
+        return false;
+      });
+      
+      // do the opposite on other link hover
+      $('#gmap-overlay a').hover(
+        function() {
+          $('#gmap-overlay-close').addClass('hovering-reset');
+        },
+        function() {
+          $('#gmap-overlay-close').removeClass('hovering-reset');
+        }
+      );
+      
+    });
+    // add class on close button when hovering the overlay
+    $('#gmap-overlay').hover(
+      function() {
+        $('#gmap-overlay-close').addClass('hovering');
+      },
+      function() {
+        $('#gmap-overlay-close').removeClass('hovering');
+      }
+    );
+  }
+  
 }(jQuery));
+
+
+    $("li").hover(
+      function () {
+        $(this).append($("<span> ***</span>"));
+      }, 
+      function () {
+        $(this).find("span:last").remove();
+      }
+    );
