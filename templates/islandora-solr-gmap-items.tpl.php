@@ -30,7 +30,7 @@
      <div class="solr-field-title">
        <?php $url = 'http://164.67.30.146/drupal/fedora/repository/' . $item['PID']; // @TODO: update this later to base url  ?>
        <?php $value = (is_array($item['mods_title_s'])? implode(', ', $item['mods_title_s']) : $item['mods_title_s']) ?>
-       <?php print l($value, $url ); ?>
+       <?php print l($value, $url, array('attributes' => array('title' => t('View full object') )) ); ?>
      </div>  
    
    </li>
