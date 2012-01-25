@@ -44,7 +44,7 @@
 
       <div class="solr-left">
         <div class="solr-field <?php print $result['mods_title_s']['class']; ?>">
-          <div class="label"><label><?php print t($result['mods_title_s']['label']); ?></label></div>
+          <div class="label"><label><?php print t('Title'); ?></label></div>
           <div class="value">
             <a href="http://164.67.30.146/drupal/fedora/repository/<?php print $result['PID']['value'] ?>" title="<?php print $result['mods_title_s']['value']; ?>">
             <?php print $result['mods_title_s']['value']; ?></div>
@@ -52,42 +52,42 @@
         </div>
         <?php if($result['mods_topic_s']['value']): ?>
         <div class="solr-field <?php print $result['mods_topic_s']['class']; ?>">
-          <div class="label"><label><?php print t($result['mods_topic_s']['label']); ?></label></div>
+          <div class="label"><label><?php print t('Topic'); ?></label></div>
           <div class="value"><?php print $result['mods_topic_s']['value']; ?></div>
         </div>
         <?php endif; ?>
 
         <?php if($result['mods_geographic_s']['value']): ?>
         <div class="solr-field <?php print $result['mods_geographic_s']['class']; ?>">
-          <div class="label"><label><?php print t($result['mods_geographic_s']['label']); ?></label></div>
+          <div class="label"><label><?php print t('Location'); ?></label></div>
           <div class="value"><?php print $result['mods_geographic_s']['value']; ?></div>
         </div>
         <?php endif; ?>
 
         <?php if($result['mods_publisher_s']['value']): ?>
         <div class="solr-field <?php print $result['mods_publisher_s']['class']; ?>">
-          <div class="label"><label><?php print t($result['mods_publisher_s']['label']); ?></label></div>
+          <div class="label"><label><?php print t('Publisher'); ?></label></div>
           <div class="value"><?php print $result['mods_publisher_s']['value']; ?></div>
         </div>
         <?php endif; ?>
 
         <?php if($result['mods_genre_s']['value']): ?>
         <div class="solr-field <?php print $result['mods_genre_s']['class']; ?>">
-          <div class="label"><label><?php print t($result['mods_genre_s']['label']); ?></label></div>
+          <div class="label"><label><?php print t('Genre'); ?></label></div>
           <div class="value"><?php print $result['mods_genre_s']['value']; ?></div>
         </div>
         <?php endif; ?>
         
         <?php if($result['mods_subjectName_s']['value']): ?>
         <div class="solr-field <?php print $result['mods_subjectName_s']['class']; ?>">
-          <div class="label"><label><?php print t($result['mods_subjectName_s']['label']); ?></label></div>
+          <div class="label"><label><?php print t('Subject'); ?></label></div>
           <div class="value"><?php print $result['mods_subjectName_s']['value']; ?></div>
         </div>
         <?php endif; ?>
         
         <?php if($result['mods_dateIssued_dt']['value']): ?>
         <div class="solr-field <?php print $result['mods_dateIssued_dt']['class']; ?>">
-          <div class="label"><label><?php print t($result['mods_dateIssued_dt']['label']); ?></label></div>
+          <div class="label"><label><?php print t('Date Issued'); ?></label></div>
           <div class="value"><?php print date('l, F j Y', strtotime($result['mods_dateIssued_dt']['value'])); ?></div>
         </div>
         <?php endif; ?>
