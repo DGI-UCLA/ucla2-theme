@@ -499,6 +499,11 @@ ul#main-menu
 
 /* Solr results */
 
+ul.islandora-solr-search-secondary
+{
+  margin: 0px;
+}
+
 .islandora_solr_result
 {
   float: left;
@@ -674,6 +679,11 @@ a.shown-toggle
 
 
 /* Islandora Solr Gmap */
+
+#islandora-solr-gmap-wrap
+{
+  margin-top: 10px;
+}
 
 #gmap-overlay-wrap
 {
