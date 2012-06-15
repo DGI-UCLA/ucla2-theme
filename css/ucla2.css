@@ -489,6 +489,13 @@ ul#main-menu
 }
 
 
+#block-islandora_solr_search-current_query a,
+.breadcrumb a
+{
+  text-decoration: none;
+}
+
+
 /* Admin section */
 
 .logged-in .draggable
